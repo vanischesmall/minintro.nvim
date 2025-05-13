@@ -137,6 +137,7 @@ local function display_minintro(payload)
 		buffer = minintro_buff,
 		callback = redraw
 	})
+	ffi.C.ui_busy_stop()	
 end
 
 local function setup(options)
