@@ -27,7 +27,7 @@ local intro_logo = {
 	"      ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═══╝",
 }
 
-local PLUGIN_NAME = "minintro"
+local PLUGIN_NAME = ""
 local DEFAULT_COLOR = "#98c379"
 local INTRO_LOGO_HEIGHT = #intro_logo
 local INTRO_LOGO_WIDTH = 55
@@ -91,7 +91,7 @@ local function create_and_set_minintro_buf(default_buff)
 end
 
 local function set_options()
-	vim.opt_local.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:Cursor/lCursor,sm:block"	
+	vim.opt.guicursor = "a:block-blinkon0"
 	vim.opt_local.cursorline = false     -- disable line highlighting
 	vim.opt_local.number = false         -- disable line numbers
 	vim.opt_local.relativenumber = false -- disable relative line numbers
