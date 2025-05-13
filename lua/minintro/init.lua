@@ -74,6 +74,7 @@ local function create_and_set_minintro_buf(default_buff)
 end
 
 local function set_options()
+	vim.opt_local.cursorline = false     -- disable line highlighting
 	vim.opt_local.number = false         -- disable line numbers
 	vim.opt_local.relativenumber = false -- disable relative line numbers
 	vim.opt_local.list = false           -- disable displaying whitespace
