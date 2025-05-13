@@ -91,7 +91,27 @@ local function create_and_set_minintro_buf(default_buff)
 end
 
 local function set_options()
-	vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:Cursor/lCursor,sm:block"	
+	-- vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:Cursor/lCursor,sm:block"		
+	local ffi = require("ffi")
+	
+	ffi.cdef([[
+	void ui_busy_start(void);
+	void ui_busy_stop(void);
+	]])
+	
+	vim.api.nvim_create_autocmd({"InsertEnter"}, {
+	  callback = function()
+	    ffi.C.ui_busy_start()
+	  end
+	})
+	
+	vim.api.nvim_create_autocmd({"InsertLeave"}, {
+	  callback = function()
+	    ffi.C.ui_busy_stop()
+	  end
+	})
+	
+	
 	vim.opt_local.cursorline = false     -- disable line highlighting
 	vim.opt_local.number = false         -- disable line numbers
 	vim.opt_local.relativenumber = false -- disable relative line numbers
