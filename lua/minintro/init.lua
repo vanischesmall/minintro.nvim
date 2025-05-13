@@ -27,7 +27,7 @@ local intro_logo = {
 	"      ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═══╝",
 }
 
-local PLUGIN_NAME = ""
+local PLUGIN_NAME = "ivan"
 local DEFAULT_COLOR = "#98c379"
 local INTRO_LOGO_HEIGHT = #intro_logo
 local INTRO_LOGO_WIDTH = 55
