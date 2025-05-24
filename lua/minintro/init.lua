@@ -27,6 +27,8 @@ local intro_logo = {
 	"      ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═══╝",
 }
 
+local intro_logo = { "" }
+
 local ffi = require("ffi")
 
 ffi.cdef([[
