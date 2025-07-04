@@ -77,10 +77,10 @@ void ui_busy_stop(void);
 ]])
 
 local PLUGIN_NAME = "ivan"
-local DEFAULT_COLOR = "#98c379"
+local DEFAULT_COLOR = "#A0A0A0"
 
 local INTRO_LOGO_HEIGHT = #intro_logo
-local INTRO_LOGO_WIDTH = 51
+local INTRO_LOGO_WIDTH = 62
 
 local autocmd_group = vim.api.nvim_create_augroup(PLUGIN_NAME, {})
 local highlight_ns_id = vim.api.nvim_create_namespace(PLUGIN_NAME)
