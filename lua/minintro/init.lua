@@ -20,53 +20,23 @@ local intro_logo = {
 }
 
 local intro_logo = {
-	"iIYVVVVXVVVVVVVVVYVYVYYVYYYYIIIIYYYIYVVVYYYYYYYYYVVYVVVVXVVVVVYI+.",
-	"tYVXXXXXXVXXXXVVVYVVVVVVVVVVVVYVVVVVVVVVVVVVVVVVXXXXXVXXXXXXXVVYi.",
-	"iYXRXRRRXXXXXXXXXXXVVXVXVVVVVVVVXXXVXVVXXXXXXXXXXXXXXRRRRRRRRRXVi.",
-	"tVRRRRRRRRRRRRRRRXRXXXXXXXXXXXXXXRRXXXXRRRRXXXXXXXRRRRRRRRRRRRXV+.",
-	"tVRRBBBRMBRRRRRRRRRXXRRRRRXt=+;;;;;==iVXRRRRXXXXRRRRRRRRMMBRRRRXi,",
-	"tVRRBMBBMMBBBBBMBBRBBBRBX++=++;;;;;;:;;;IRRRRXXRRRBBBBBBMMBBBRRXi,",
-	"iVRMMMMMMMMMMMMMMBRBBMMV==iIVYIi=;;;;:::;;XRRRRRRBBMMMMMMMMBBRRXi.",
-	"iVRMMMMMMMMMMMMMMMMMMMY;IBWWWWMMXYi=;:::::;RBBBMMMMMMMMMMMMMMBBXi,",
-	"+VRMMRBMMMMMMMMMMMMMMY+;VMMMMMMMRXIi=;:::::=VVXXXRRRMMMMMMMMBBMXi;",
-	"=tYYVVVXRRRXXRBMMMMMV+;=RBBMMMXVXXVYt;::::::ttYYVYVVRMMMMMMBXXVI+=",
-	";=tIYYVYYYYYYVVVMMMBt=;;+i=IBi+t==;;i;::::::+iitIIttYRMMMMMRXVVI=;",
-	";=IIIIYYYIIIIttIYItIt;;=VVYXBIVRXVVXI;::::::;+iitttttVMMBRRRVVVI+,",
-	";+++tttIttttiiii+i++==;;RMMMBXXMMMXI+;::::::;+ittttitYVXVYYIYVIi;;",
-	";===iiittiiIitiii++;;;;:IVRVi=iBXVIi;::::::::;==+++++iiittii+++=;;",
-	";;==+iiiiiiiiii+++=;;;;;;VYVIiiiVVt+;::::::::;++++++++++iti++++=;;",
-	";;=++iiii+i+++++iii==;;;::tXYIIYIi+=;:::::,::;+++++++++++++++++=;;",
-	";;;+==+ii+++++iiiiit=;;:::::=====;;;::::::::::+++i+++++++++i+++;;;",
-	";;;==+=+iiiiitttIIII+;;;:,::,;;;;:;=;;;::,::::=++++++++==++++++;;;",
-	":;====+tittiiittttti+;;::::,:=Ytiiiiti=;:::::,:;;==ii+ittItii+==;;",
-	";;+iiittIti+ii;;===;;:;::::;+IVXVVVVVVt;;;;;::::;;===;+IIiiti=;;;;",
-	";=++++iIti+ii+=;;;=;:::;;+VXBMMBBBBBBXY=;=;;:::::;=iYVIIttii++;;;;",
-	";;++iiiItttIi+++=;;:::;=iBMMMMMMMMMMMXI==;;,::;;:;;=+itIttIIti+;;;",
-	";=+++++i+tYIIiii;:,::;itXMMMMMMMMMMMBXti==;:;++=;:::::;=+iittti+;;",
-	";;+ii+ii+iitiIi;::::;iXBMMMMMWWWWWMMBXti+ii=;::::,,,,:::=;==+tI+;;",
-	";;iiiitItttti;:::;::=+itYXXMWWWWWWMBYt+;;::,,,,,,,,,,,,,:==;==;;;;",
-	":;=iIIIttIt+:;:::;;;==;+=+iiittttti+;;:,:,,,,::,,,,,,,,:::;=;==::;",
-	";::=+ittiii=;:::::;;;:;:;=++==;;==;:,,,,,,:;::::,,,,,,,,::;==;;::;",
-	":::;+iiiii=;::::,:;:::::;;:;;::;:::,,,,,,,:::;=;;;:,,,,,:::;;::::;",
-	":;;iIIIIII=;:::,:::::::,::::,:::,,,,,,,,,,,:;;=;:,,,,,,::::;=;:::;",
-	":;==++ii+;;;:::::::::::,,,,,,::,,,,,,,,,,,::::,,,,,,,,,,:,:::::::;",
-	"::;;=+=;;;:::;;::,,,,,,,,,,,,,,,,,,,,,,,,,:,,,,,,,,,,,,,,,,,:::::;",
-	"::;=;;;:;:::;;;;::,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,::,,::::;",
-	":;;:;::::::,::,,:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:::;",
-	":::::::::::;;;:,,,,,,,,,,,,,...,...,,,.,,,,,,,,,,,,.,,,,,,,,,,,,:;",
-	"::::::::;=;;;;;::,,,,,,,,,,,.......,...,,,,,,,,,,,,.,,,,,,,,,,,,,;",
-	":::::,,:;=;;;;;;;iVXXXVt+:,,....,,,,....,.,,,,,,,.,.....,,,,,,,,:;",
-	":,,::,,:::;;;;;;=IVVVXXXXVXVt:,,,,,..,..,,,,.,,,,,..,.,,,,,,,,,,,;",
-	"::,::,,,:,:::::,::;=iIYVXVVVVIYIi;,,.,.,,,::,,,,,,,,,,,,,,,,,,,,,.",
-	":,,,,,,,,,,,,,,,,::;+itIIIIIIi:;;i++=;;;;;;;;;::,,,...,,..,,,,,,,.",
-	":,,,,,,,,,,,,,,=iitVYi++iitt==it;;:;;;;::;;::::,,,......,,,,,,,::.",
-	"::,,,,,,,,,,,,,++iiIVIi=;;=;+i;:;+:::,,,,,,,,,,,,,.....,,,,,,,,::,",
-	",,,,,,,,,,,,,,,;=+it=:::,,,,,,,,,,.,......,,.,..........,,,,,,,,::",
-	":,,,,,,,,,,,,,,,,:=:,,,,,,,,,,,,,,......................,.,,.,.,,:",
-	":,,,,,,,,,,,,,,,,,:,,,,,,,,,,..,........................,..,...,,:",
-	",,,,,,,,,,,,,,,,,,,.....................................,.......,,",
-	",,,,,,,,,.,,,,,,,...............................................,,",
-	"itittiiiii+=++=;;=iiiiiiittiiiiii+iii===;++iiitiiiiiii+=====+ii=+i",
+"          ____  ",
+"        o8%8888,    ",
+"      o88%8888888.  ",
+"     8'-    -:8888b   ",
+"    8'         8888  ",
+"   d8.-=. ,==-.:888b  ",
+"   >8 `~` :`~' d8888   ",
+"   88         ,88888   ",
+"   88b. `-~  ':88888  ",
+"   888b ~==~ .:88888 ",
+"   88888o--:':::8888      ",
+"   `88888| :::' 8888b  ",
+"   8888^^'       8888b  ",
+"  d888           ,%888b.   ",
+" d88%            %%%8--'-.  ",
+"/88:.__ ,       _%-' ---  -  ",
+"    '''::===..-'   =  --.",
 }
 
 local ffi = require("ffi")
@@ -80,7 +50,7 @@ local PLUGIN_NAME = "ivan"
 local DEFAULT_COLOR = "#A0A0A0"
 
 local INTRO_LOGO_HEIGHT = #intro_logo
-local INTRO_LOGO_WIDTH = 62
+local INTRO_LOGO_WIDTH = 29
 
 local autocmd_group = vim.api.nvim_create_augroup(PLUGIN_NAME, {})
 local highlight_ns_id = vim.api.nvim_create_namespace(PLUGIN_NAME)
