@@ -27,6 +27,10 @@ local intro_logo = {
 	"      ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═══╝",
 }
 
+-- local intro_logo = {
+
+-- }
+
 local intro_logo = { "" }
 
 local ffi = require("ffi")
@@ -39,7 +43,7 @@ void ui_busy_stop(void);
 local PLUGIN_NAME = "ivan"
 local DEFAULT_COLOR = "#98c379"
 local INTRO_LOGO_HEIGHT = #intro_logo
-local INTRO_LOGO_WIDTH = 55
+local INTRO_LOGO_WIDTH = math.max(unpack(vim.tbl_map(function(line) return #line end, intro_logo)))
 
 local autocmd_group = vim.api.nvim_create_augroup(PLUGIN_NAME, {})
 local highlight_ns_id = vim.api.nvim_create_namespace(PLUGIN_NAME)
