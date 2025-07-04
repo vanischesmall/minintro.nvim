@@ -52,7 +52,7 @@ void ui_busy_start(void);
 void ui_busy_stop(void);
 ]])
 
-vim.loop.os_getenv("USER") or "putin"
+local PLUGIN_NAME = vim.loop.os_getenv("USER") or "putin"
 local DEFAULT_COLOR = "#A0A0A0"
 
 local INTRO_LOGO_HEIGHT = #intro_logo
