@@ -1,23 +1,23 @@
 -- local minintro_opened = false
 
 local intro_logo = {
-	"          ____  		      ",
-	"        o8%8888,    		  ",
-	"      o88%8888888.  		  ",
-	"     8'-    -:8888b   		  ",
-	"    8'         8888  		  ",
-	"   d8.-=. ,==-.:888b  		  ",
-	"   >8 `~` :`~' d8888   	  ",
-	"   88         ,88888   	  ",
-	"   88b. `-~  ':88888  		  ",
-	"   888b ~==~ .:88888 		  ",
-	"   88888o--:':::8888      	  ",
-	"   `88888| :::' 8888b  	  ",
-	"   8888^^'       8888b  	  ",
-	"  d888           ,%888b.     ",
-	" d88%            %%%8--'-.   ",
-	"/88:.__ ,       _%-' ---  -  ",
-	"    '''::===..-'   =  --.    ",
+	"          ____  		       ",
+	"        o8%8888,    		   ",
+	"      o88%8888888.  		   ",
+	"     8'-    -:8888b   		   ",
+	"    8'         8888  		   ",
+	"   d8.-=. ,==-.:888b  		   ",
+	"   >8 `~` :`~' d8888   	   ",
+	"   88         ,88888   	   ",
+	"   88b. `-~  ':88888  		   ",
+	"   888b ~==~ .:88888 		   ",
+	"   88888o--:':::8888      	   ",
+	"   `88888| :::' 8888b  	   ",
+	"   8888^^'       8888b  	   ",
+	"  d888           ,%888b.      ",
+	" d88%            %%%8--'-.    ",
+	"/88:.__ ,       _%-' ---  -   ",
+	"    '''::===..-'   =  --.     ",
 }
 
 local intro_logo = {
@@ -55,8 +55,8 @@ void ui_busy_stop(void);
 local PLUGIN_NAME = vim.loop.os_getenv("USER") or "putin"
 local DEFAULT_COLOR = "#A0A0A0"
 
-local INTRO_LOGO_HEIGHT = #intro_logo
 local INTRO_LOGO_WIDTH = 30
+local INTRO_LOGO_HEIGHT = #intro_logo
 
 local autocmd_group = vim.api.nvim_create_augroup(PLUGIN_NAME, {})
 local highlight_ns_id = vim.api.nvim_create_namespace(PLUGIN_NAME)
