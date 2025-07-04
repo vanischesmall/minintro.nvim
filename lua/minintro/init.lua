@@ -28,8 +28,14 @@ void ui_busy_stop(void);
 
 local PLUGIN_NAME = "ivan"
 local DEFAULT_COLOR = "#98c379"
+
 local INTRO_LOGO_HEIGHT = #intro_logo
-local INTRO_LOGO_WIDTH = math.max(unpack(vim.tbl_map(function(line) return #line end, intro_logo)))
+local INTRO_LOGO_WIDTH = 0
+for _, line in ipairs(intro_logo) do
+    if #line > INTRO_LOGO_WIDTH then
+        INTRO_LOGO_WIDTH = #line
+    end
+end
 
 local autocmd_group = vim.api.nvim_create_augroup(PLUGIN_NAME, {})
 local highlight_ns_id = vim.api.nvim_create_namespace(PLUGIN_NAME)
