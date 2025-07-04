@@ -31,6 +31,8 @@ local DEFAULT_COLOR = "#98c379"
 
 local INTRO_LOGO_HEIGHT = #intro_logo
 local INTRO_LOGO_WIDTH = math.max(unpack(vim.tbl_map(function(line) return #line end, intro_logo)))
+print("Width:", INTRO_LOGO_WIDTH)    -- Output: 51 (or whatever the longest line's length is)
+
 
 local autocmd_group = vim.api.nvim_create_augroup(PLUGIN_NAME, {})
 local highlight_ns_id = vim.api.nvim_create_namespace(PLUGIN_NAME)
