@@ -1,5 +1,3 @@
--- local minintro_opened = false
-
 local intro_logo = {
 	"          ____  		       ",
 	"        o8%8888,    		   ",
